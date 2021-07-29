@@ -5,7 +5,7 @@ const port = 3005
 const IP_SERVER = process.env.IP_SERVER;
 
 app.get('/', (req, res) => {
-  res.send(`Hello World from ${IP_SERVER}!`)
+  res.send(`Hello World from ${IP_SERVER}! Los cambios se despliegan solos 😀`)
 })
 
 app.listen(port, () => {
