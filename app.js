@@ -5,9 +5,7 @@ const port = 3005
 const IP_SERVER = process.env.IP_SERVER;
 
 app.get('/', (req, res) => {
-  // res.send(`Hello World from ${IP_SERVER}! Los cambios se despliegan solos 😀`)
-  res.set('Content-Type', 'text/html')
-  res.send(Buffer.from('<html><body><img style="width: 100%" src="https://i.imgflip.com/3vbrv7.jpg"></body></html>'))
+  res.send(`Hello World from ${IP_SERVER}!`)
 })
 
 app.listen(port, () => {
