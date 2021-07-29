@@ -6,7 +6,7 @@ const IP_SERVER = process.env.IP_SERVER;
 
 app.get('/', (req, res) => {
   res.send(`Hello World from ${IP_SERVER}!`)
-})
+});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
